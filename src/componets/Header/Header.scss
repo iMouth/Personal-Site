@@ -1,5 +1,3 @@
-@import "./toggle.scss";
-
 $text-color: #a9a9a9;
 
 #Header {
@@ -39,9 +37,7 @@ $text-color: #a9a9a9;
       &:hover {
         padding-top: 5px;
         text-decoration: underline;
-      }
-      &:visited {
-        color: $text-color;
+        color: #a2642b;
       }
     }
   }

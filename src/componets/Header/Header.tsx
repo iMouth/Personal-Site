@@ -13,10 +13,6 @@ const Header = () => {
         <a href="#Skills">Skills</a>
         <a href="#Projects">Projects</a>
         <a href="#Contact">Contact</a>
-        <div className="toggle">
-          <input type="checkbox" id="switch" />
-          <label htmlFor="switch">Toggle</label>
-        </div>
       </nav>
     </div>
   );

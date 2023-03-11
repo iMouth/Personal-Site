@@ -11,9 +11,10 @@
   width: clamp(300px, 80%, 800px);
 
   .title {
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2rem, 8vw, 4rem);
     text-decoration: underline;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 0.2rem;
   }
 
   .content {
