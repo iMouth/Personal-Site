@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  top: 25rem;
+  gap: 2rem;
+
+  & > a {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+    & img {
+      height: 50px;
+      width: 50px;
+      border-radius: 20%;
+      filter: invert(1);
+    }
+  }
+}

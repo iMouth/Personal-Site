@@ -9,10 +9,15 @@ $text-color: #a9a9a9;
   height: 4rem;
   width: 100vw;
   font-family: "Courier New", Courier, monospace;
+  border-bottom: solid 1px var(--secondary-color);
 
   .name {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
 
     h1 {
       color: $text-color;

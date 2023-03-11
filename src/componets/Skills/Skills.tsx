@@ -6,18 +6,18 @@ import "./Skills.scss";
 
 const Skills = () => {
   const devTools = require.context("./assets/dev-tools", true, /\.svg$/);
-  const devToolsList = devTools.keys().map((key) => {
+  let devToolsList = devTools.keys().map((key) => {
     const name = key.replace("./", "").replace(".svg", "");
     return <Icon key={uniqid()} name={name} link={devTools(key)} />;
   });
-  _.shuffle(devToolsList);
+  devToolsList = _.shuffle(devToolsList);
 
   const langAndFrames = require.context("./assets/lang-frame", true, /\.svg$/);
-  const langAndFramesList = langAndFrames.keys().map((key) => {
+  let langAndFramesList = langAndFrames.keys().map((key) => {
     const name = key.replace("./", "").replace(".svg", "");
     return <Icon key={uniqid()} name={name} link={langAndFrames(key)} />;
   });
-  _.shuffle(langAndFramesList);
+  langAndFramesList = _.shuffle(langAndFramesList);
 
   return (
     <div id="Skills">

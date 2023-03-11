@@ -11,7 +11,7 @@
     z-index: 2;
     p {
       color: var(--font-color-1);
-      font-size: 6rem;
+      font-size: clamp(2rem, 7vw, 6rem);
       margin: 0;
       font-family: var(--main-font);
     }
@@ -19,11 +19,12 @@
 
   .pic-container {
     perspective: 1500px;
-    width: 600px;
-    height: 600px;
+    width: clamp(300px, 30vw, 600px);
+    height: clamp(300px, 30vw, 600px);
     position: absolute;
     z-index: 1;
-    right: 10vw;
+    right: clamp(0rem, 5vw, 10rem);
+
 
     .pic {
       transition: 0.3s;

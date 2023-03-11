@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   // move the picture around on mousemove
@@ -21,6 +22,7 @@ const Home = () => {
       <div id="outer" className="pic-container">
         <div id="inner" className="pic"></div>
       </div>
+      <Footer />
     </div>
   );
 };
