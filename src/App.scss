@@ -1,15 +1,12 @@
 .App {
   & > * {
     caret-color: transparent;
+
     background-clip: content-box;
   }
 
   .snap-container {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-
     & > div {
-      scroll-snap-align: center;
       padding: 0 5vw;
     }
   }

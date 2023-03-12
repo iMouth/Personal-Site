@@ -18,7 +18,7 @@ const Projects = () => {
     let project = 0;
     indicators.forEach((indicator) => {
       if (indicator.classList.contains("active")) {
-        project = parseInt(indicator.getAttribute("data-mdb-target")!);
+        project = parseInt(indicator.getAttribute("data-mdb-target") as string);
       }
     });
     setCurProject(project);

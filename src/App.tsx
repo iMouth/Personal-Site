@@ -3,7 +3,7 @@ import "./App.scss";
 import Header from "./componets/Header/Header";
 import Home from "./componets/Home/Home";
 import Skills from "./componets/Skills/Skills";
-import Projects from "./componets/Home/assets/Projects/Projects";
+import Projects from "./componets/Projects/Projects";
 import About from "./componets/About/About";
 import Contact from "./componets/Contact/Contact";
 
