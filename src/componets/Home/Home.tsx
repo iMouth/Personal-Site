@@ -3,8 +3,10 @@ import "./Home.scss";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
-  // move the picture around on mousemove
   document.addEventListener("mousemove", (e) => {
+    if (window.scrollY > window.innerWidth) {
+      return;
+    }
     const outer = document.getElementById("outer") as HTMLElement;
     const inner = document.getElementById("inner") as HTMLElement;
     const x = e.clientX / window.innerWidth;

@@ -1,48 +1,30 @@
 $text-color: #a9a9a9;
+$text-hover: #a2642b;
 
 #Header {
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  justify-content: space-around;
-  background-color: rgba($color: #000, $alpha: 0.8);
-  height: 4rem;
-  width: 100vw;
-  font-family: "Courier New", Courier, monospace;
-  border-bottom: solid 1px var(--secondary-color);
+  .navbar {
+    background-color: rgba($color: #000, $alpha: 0.8) !important;
+    border-bottom: solid 1px var(--secondary-color);
+    font-family: var(--main-font);
+    .container {
+      .name {
+        color: $text-color;
+        font-size: 1.5rem;
+      }
 
-  .name {
-    display: flex;
-    align-items: center;
+      .tabs {
+        a {
+          color: $text-color;
+          &:hover {
+            transform: scale(1.1);
+            text-decoration: underline;
+            color: $text-hover;
+          }
+        }
+      }
 
-    @media screen and (max-width: 600px) {
-      display: none;
-    }
-
-    h1 {
-      color: $text-color;
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-  }
-
-  .tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
-    a {
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      color: $text-color;
-      text-decoration: none;
-
-      &:hover {
-        padding-top: 5px;
-        text-decoration: underline;
-        color: #a2642b;
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(169, 169, 169, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
       }
     }
   }

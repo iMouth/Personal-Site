@@ -1,0 +1,23 @@
+#ProjectInfo {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--main-font);
+
+  p {
+    font-size: clamp(1.8em, 5vw, 2.5rem);
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    & > a {
+      border-radius: 1rem;
+      width: clamp(5rem, 10vw, 8rem);
+    }
+  }
+}

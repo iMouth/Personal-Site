@@ -1,0 +1,44 @@
+#Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-color-2);
+  color: var(--font-color-2);
+  gap: 2rem;
+
+  .title {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 0.2rem;
+    font-family: var(--main-font);
+  }
+
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+
+    & > img {
+      max-width: 800px;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  height: 1.2rem;
+  gap: clamp(0.5rem, 2vw, 2rem);
+  & > li {
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 1.2rem;
+    background-color: rgb(202, 202, 202);
+
+    &.active {
+      background-color: rgb(63, 63, 63);
+    }
+  }
+}

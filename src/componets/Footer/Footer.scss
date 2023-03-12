@@ -1,11 +1,11 @@
-.footer {
+.footer{
   display: flex;
-  position: absolute;
+
   justify-content: flex-end;
   align-items: flex-end;
-  position: relative;
-  top: 25rem;
-  gap: 2rem;
+  height: calc(100% - 3rem);
+  top: clamp(18rem, 10vw, 25rem);
+  gap: clamp(1rem, 3vw, 2rem);
 
   & > a {
     height: 50px;

@@ -7,13 +7,13 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <a href="https://github.com/iMouth">
+      <a rel="noreferrer" target="_blank " href="https://github.com/iMouth">
         <img src={github} alt="github" />
       </a>
-      <a href="https://www.linkedin.com/in/kelvin-kast-919424248/">
+      <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kelvin-kast-919424248/">
         <img src={linkedin} alt="linkedin" />
       </a>
-      <a href="mailto:kelvin.8.kast@gmail.com">
+      <a rel="noreferrer" target="_blank" href="mailto:kelvin.8.kast@gmail.com">
         <img src={gmail} alt="gmail" />
       </a>
     </div>

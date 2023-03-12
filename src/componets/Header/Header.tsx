@@ -1,19 +1,30 @@
 import React from "react";
 import "./Header.scss";
 
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
 const Header = () => {
   return (
     <div id="Header">
-      <div className="name">
-        <h1>Kelvin Kast</h1>
-      </div>
-      <nav className="tabs">
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
-      </nav>
+      <Navbar bg="light" fixed="top" expand="md">
+        <Container>
+          <Navbar.Brand className="name" href="#Home">
+            Kelvin Kast
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+            <Nav className="tabs align-items-end">
+              <Nav.Link href="#Home">Home</Nav.Link>
+              <Nav.Link href="#About">About</Nav.Link>
+              <Nav.Link href="#Skills">Skills</Nav.Link>
+              <Nav.Link href="#Projects">Projects</Nav.Link>
+              <Nav.Link href="#Contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 };
