@@ -16,9 +16,11 @@ $background-color: rgba(
   --secondary-color: #a2642b;
   --main-font: "Courier New", Courier, monospace;
 }
+
 html {
   background-color: var(--bg-color-1);
   scrollbar-width: thin;
+  height: -webkit-fill-available;
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +41,8 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   overflow-x: hidden;
   scrollbar-color: rgba(255, 255, 255, 0.281) none;
   scrollbar-width: thin;
