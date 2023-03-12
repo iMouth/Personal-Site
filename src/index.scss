@@ -1,6 +1,13 @@
 @import "./normalize.css";
 @import "~bootstrap/scss/bootstrap";
 
+$size: 10px;
+$foreground-color: #ffffff;
+$background-color: rgba(
+  $color: #e10000,
+  $alpha: 0,
+) !important;
+
 :root {
   --bg-color-1: #000000;
   --bg-color-2: rgb(255, 255, 255);
@@ -9,7 +16,33 @@
   --secondary-color: #a2642b;
   --main-font: "Courier New", Courier, monospace;
 }
+html {
+  background-color: var(--bg-color-1);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.281);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
   overflow-x: hidden;
+  scrollbar-color: rgba(255, 255, 255, 0.281) none;
+  scrollbar-width: thin;
+  background-color: black;
+  background: black;
+  color: white;
 }
